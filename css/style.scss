@@ -60,7 +60,7 @@ h6 {
     text-align: center;
     margin: 130px auto 30px;
     @include mq(sm) {
-        margin: 200px auto 60px;
+        margin: 170px auto 60px;
     }
 }
 
@@ -159,6 +159,17 @@ body {
                     font-size: 14px;
                 }
             }
+            .social_icons_div {
+                position: absolute;
+                bottom: 20px;
+                right: 5%;
+                a {
+                    .social_icon {
+                        width: 24px;
+                    }
+                    margin: 10px 8px;
+                }
+            }
         }
     }
     // top_secsion
@@ -181,15 +192,22 @@ body {
                 font-size: 30px;
             }
         }
-        h3 {
+        h3,
+        p {
             font-size: 20px;
             @include mq(sm) {
                 font-size: 16px;
             }
         }
-        p {
-            font-size: 16px;
+        .top_image {
+            width: 600px;
+            max-width: 80%;
+            border-radius: 30px;
+            margin: 40px auto 20px;
         }
+        // p {
+        //     font-size: 16px;
+        // }
     }
     // top_disc
     .top_disc_div {
@@ -205,6 +223,7 @@ body {
         margin: 30px auto 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         p {
+            font-family: $font-main;
             font-size: 16px;
             line-height: 1.5;
             margin: 0;
@@ -212,17 +231,23 @@ body {
     }
     // event_details_secsion
     .event_details_secsion {
+        text-align: right;
+        text-align: right;
+        width: 1040px;
+        max-width: calc(90vw - 140px);
+        margin: 30px auto 200px;
+        @include mq(sm) {
+            margin: 40px auto 300px;
+            max-width: calc(90vw);
+        }
         .event_list_div {
+            text-align: left;
+            margin-bottom: 20px;
             @include mq(sm) {
                 padding: 30px 20px;
-                margin: 10px auto 20px;
-                max-width: calc(90vw - 40px);
             }
             padding: 60px 70px;
             border-radius: 10px;
-            width: 900px;
-            max-width: calc(90vw - 140px);
-            margin: 30px auto 20px;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             .list_item {
                 margin: 20px 0;
@@ -344,18 +369,19 @@ body {
                 }
             }
         }
-        .print_poster {
-            font-weight: 800;
-            font-size: 14px;
-            text-align: right;
-        }
+    }
+    // member_text
+    #member_text {
+        line-height: 2;
     }
     footer {
-        padding: 20px 40px;
+        margin-top: 300px;
+        padding: 20px 40px 80px;
         display: flex;
+        position: relative;
         @include mq(sm) {
             display: block;
-            padding: 50px 20px;
+            padding: 50px 20px 70px;
             .logo_text {
                 p {
                     font-size: 20px;
@@ -404,4 +430,22 @@ body {
 .get_height {
     height: 100vh;
     display: none;
+}
+
+.print_poster {
+    font-weight: 800;
+    font-size: 14px;
+    text-align: right;
+}
+
+.social_icons_div {
+    position: absolute;
+    bottom: 40px;
+    right: 5%;
+    a {
+        .social_icon {
+            width: 30px;
+        }
+        margin: 10px 15px;
+    }
 }
