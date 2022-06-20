@@ -382,6 +382,10 @@ body .guest_speaker_secsion .guest_speaker_div img {
   }
 }
 
+body .guest_speaker_secsion .guest_speaker_div .bogdan_name {
+  font-size: 22px;
+}
+
 body .guest_speaker_secsion .guest_speaker_div p {
   font-weight: 800;
   font-size: 16px;
