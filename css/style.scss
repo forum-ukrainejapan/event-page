@@ -12,6 +12,7 @@ $breakpoints: ( 'sm': 'screen and (max-width: 500px)', 'md': 'screen and (max-wi
 $darkblue: #102F50;
 $white: #ffffff;
 $blue: #072593;
+$logo_blue: #04e1ff;
 $black: #333;
 $yellow: #F5D755;
 p,
@@ -35,6 +36,10 @@ h6 {
 
 .text_blue {
     color: $blue;
+}
+
+.text_logoBlue {
+    color: $logo_blue;
 }
 
 .text_yellow {
