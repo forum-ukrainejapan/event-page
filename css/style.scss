@@ -184,6 +184,24 @@ body {
         @include mq(sm) {
             margin: 120px auto 100px;
         }
+        a {
+            text-decoration: none;
+        }
+        .application_button {
+            width: 250px;
+            margin: 50px auto 20px;
+            background: $darkblue;
+            transition: all .4s;
+            &:hover {
+                background: rgba(16, 47, 80, 0.767);
+            }
+            color: $white;
+            padding: 10px 0;
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+        }
         h1 {
             font-size: 60px;
             @include mq(sm) {
@@ -232,6 +250,36 @@ body {
             font-size: 16px;
             line-height: 1.5;
             margin: 0;
+        }
+    }
+    //member section
+    .member_section {
+        .member_title {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team_photo {
+            width: 80%;
+            margin: 0 10%;
+            @include mq(sm) {
+                width: 100%;
+                margin: 0 0;
+            }
+            // max-width: 400px;
+        }
+        .team_outer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .team_group {
+                margin: 20px 15px;
+                .team_text {
+                    font-size: 20px;
+                    margin: 30px auto 5px;
+                    font-weight: 500;
+                }
+            }
         }
     }
     // event_details_secsion
