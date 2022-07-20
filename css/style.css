@@ -407,15 +407,6 @@ body .guest_speaker_secsion .guest_speaker_div {
   margin: 30px auto 20px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
 }
 
 @media screen and (max-width: 500px) {
@@ -426,14 +417,24 @@ body .guest_speaker_secsion .guest_speaker_div {
   }
 }
 
+body .guest_speaker_secsion .guest_speaker_div .flex_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
 @media screen and (max-width: 500px) {
-  body .guest_speaker_secsion .guest_speaker_div {
+  body .guest_speaker_secsion .guest_speaker_div .flex_tab {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-body .guest_speaker_secsion .guest_speaker_div img {
+body .guest_speaker_secsion .guest_speaker_div .flex_tab img {
   width: 250px;
   height: 140px;
   -o-object-fit: cover;
@@ -442,20 +443,69 @@ body .guest_speaker_secsion .guest_speaker_div img {
 }
 
 @media screen and (max-width: 500px) {
-  body .guest_speaker_secsion .guest_speaker_div img {
+  body .guest_speaker_secsion .guest_speaker_div .flex_tab img {
     width: 100%;
     height: 300px;
   }
 }
 
-body .guest_speaker_secsion .guest_speaker_div .bogdan_name {
+body .guest_speaker_secsion .guest_speaker_div .flex_tab .bogdan_name {
   font-size: 22px;
 }
 
-body .guest_speaker_secsion .guest_speaker_div p {
+body .guest_speaker_secsion .guest_speaker_div .flex_tab p {
   font-weight: 800;
   font-size: 16px;
   line-height: 1.5;
+}
+
+body .guest_speaker_secsion .guest_speaker_div hr {
+  margin: 30px 0;
+  border: 1px solid #102F50;
+}
+
+body .guest_speaker_secsion .guest_speaker_div .comment_outer {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body .guest_speaker_secsion .guest_speaker_div .comment_outer .comment_inner {
+  padding-bottom: 100px;
+}
+
+body .guest_speaker_secsion .guest_speaker_div .comment_outer .comment_inner .comment_title {
+  font-size: 20px;
+}
+
+body .guest_speaker_secsion .guest_speaker_div .comment_outer .comment_inner .gladient_div {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  z-index: 100;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.514465)), to(white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.514465) 0%, white 100%);
+}
+
+body .guest_speaker_secsion .guest_speaker_div .comment_outer .comment_inner .more_comment_button {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 110;
+}
+
+body .guest_speaker_secsion .guest_speaker_div .comment_outer .comment_inner .more_comment_button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 body .program_secsion {

@@ -36,3 +36,17 @@ function changeMenu() {
         $('.menu_open').css('height', '0px');
     }
 }
+
+let comment_expanded = false;
+
+function expand_comment() {
+    comment_expanded = !comment_expanded;
+
+    if (comment_expanded) {
+        $('.comment_outer').css('height', 'auto');
+        $('.more_comment_button').css('transform', 'rotateX(180deg)');
+    } else {
+        $('.comment_outer').css('height', '200px');
+        $('.more_comment_button').css('transform', 'rotateX(180deg)');
+    }
+}
