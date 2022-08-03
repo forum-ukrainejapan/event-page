@@ -50,3 +50,17 @@ function expand_comment() {
         $('.more_comment_button').css('transform', 'rotateX(180deg)');
     }
 }
+
+let clicked_count = 0;
+
+function event_move() {
+    clicked_count++;
+    if (clicked_count == 3) {
+        setTimeout(() => {
+            if (clicked_count == 3) {
+                location.href = 'https://ray-o-0509.github.io/cpipc_nazotoki/towers/hf39f3.html';
+            }
+        }, 1000);
+    }
+
+}
